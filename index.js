@@ -3,7 +3,7 @@ const connectDb = require("./utils/DB");
 
 connectDb(true);
 
-const PORT = 3001;
+const PORT = process.env.PORT || 80;
 
 app.listen(PORT, () => {
   console.log(`App is running on port ${PORT}`);
